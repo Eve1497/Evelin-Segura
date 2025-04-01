@@ -5,37 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Evelin Segura Rosales</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box; background: #f4f4f4; }
-        header { background-color: #4CAF50; padding: 20px; color: white; text-align: center; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: linear-gradient(120deg, #84fab0, #8fd3f4); }
+        header { background-color: #34495e; padding: 20px; color: #ecf0f1; text-align: center; }
+        h1 { font-size: 2.5em; }
         section { padding: 20px; }
-        .project { background: #fff; padding: 15px; margin-bottom: 10px; border-radius: 5px; box-shadow: 0px 0px 10px #ddd; }
-        footer { background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .project { background: #ecf0f1; padding: 15px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project:hover { transform: scale(1.05); }
+        h2 { color: #2c3e50; }
+        footer { background-color: #34495e; color: #ecf0f1; text-align: center; padding: 10px; margin-top: 20px; }
     </style>
 </head>
 <body>
     <header>
         <h1>Evelin Segura Rosales</h1>
-        <p>Desarrolladora en crecimiento | Proyectos Básicos</p>
+        <p>Desarrolladora en crecimiento | Proyectos Interactivos</p>
     </header>
 
     <section>
         <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Calculadora Básica</h3>
-            <p>Una calculadora sencilla con funciones aritméticas básicas.</p>
-        </div>
-        <div class="project">
-            <h3>Conversor de Monedas</h3>
-            <p>Aplicación para convertir monedas usando tasas de cambio predefinidas.</p>
-        </div>
-        <div class="project">
-            <h3>Lista de Tareas</h3>
-            <p>Organizador de tareas con opciones para agregar y eliminar ítems.</p>
+        <div class="projects">
+            <div class="project">
+                <h3>Calculadora Avanzada</h3>
+                <p>Realiza operaciones complejas y cálculos científicos.</p>
+            </div>
+            <div class="project">
+                <h3>Conversor de Unidades</h3>
+                <p>Convierte unidades de medida con precisión.</p>
+            </div>
+            <div class="project">
+                <h3>Lista de Tareas Inteligente</h3>
+                <p>Gestiona tareas con recordatorios y categorización.</p>
+            </div>
+            <div class="project">
+                <h3>Galería de Imágenes</h3>
+                <p>Muestra imágenes con efecto de luz y animación.</p>
+            </div>
+            <div class="project">
+                <h3>Juego Adivina el Número</h3>
+                <p>Adivina un número aleatorio en el menor intento posible.</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>Contacto: 71774190@continental.edu.pe</p>
+        <p>Contacto: evelinsegura@example.com</p>
     </footer>
 </body>
 </html>
